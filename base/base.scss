@@ -42,12 +42,17 @@ body {
 
 .titulo-principal {
   font-size: 3vw;
+  margin-top: 20%;
   color:map-get($colores , color-secundario)
 }
 
 .parrafo-titulo {
   margin-top: 20px;
   font-size: 1vw;
+}
+
+.parrafo-titulo3{
+margin-right: 15%;
 }
 
 .contenedor2 {
@@ -65,10 +70,16 @@ body {
 
 .titulo-principal2 {
   font-size: 300%;
+  font-weight: 800;
 }
 .laptop {
   grid-area: laptop;
   margin-left: 20%;
+}
+
+.comunidad-texto{
+ text-align: center;
+ font-size: 140%
 }
 
 .monitor {
@@ -118,14 +129,14 @@ footer {
 }
 
 .contenedor-soporte {
-  background-image: url(https://insysmx.com/wp-content/uploads/2017/01/4.gif);
+  background-image: url("../media/imagen-soporte.png");
   background-repeat: no-repeat;
   padding-bottom: 8%;
   padding-top: 6%;
 }
 
 .carruselb1 {
-  margin-bottom: 30%;
+  margin-bottom: 10%;
   left: 0;
   margin-left: 10%;
   text-align: left;
@@ -138,6 +149,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "titulo monitor";
+  position: relative;
 
   .monitor1 {
     grid-area: monitor;
@@ -203,6 +215,10 @@ footer {
   margin-left: 6%;
   margin-right: 25%;
   grid-area: titulo3;
+  width: 45%;
+}
+.gabinete{
+  margin-right: 40% ;
 }
 .search-txt{
 border: none;
@@ -295,6 +311,11 @@ a:hover {color: orange; text-decoration: none;}
     font-size: 1.75vh;
   }
 }
+.cierre-home{
+margin-left: 40%;
+margin-top: 14%;
+margin-bottom: 14%;
+}
 @media (max-width: 820px){
   .conteiner-perfiles{
   display: grid;
@@ -338,7 +359,8 @@ a:hover {color: orange; text-decoration: none;}
   "monitor3"
   "titulo3";
 .monitor3{
-  margin-right: 25%;
+  margin: 0;
+  justify-self: center;
 }
 .titulo3{
   font-size: 2vh;
@@ -394,4 +416,19 @@ a:hover {color: orange; text-decoration: none;}
       font-size: 5vh;
       margin-top: 7%;
     }
+}
+.lines-container {
+  position: absolute;
+  width: 100%;
+  bottom: 100px;
+  left: 0;
+  z-index: -1;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  height: 8px;
+  background: red;
+  margin-bottom: 20px;
 }
